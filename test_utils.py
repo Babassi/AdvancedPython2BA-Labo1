@@ -22,9 +22,9 @@ class TestUtils(unittest.TestCase):
         
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate(1) ,(2 * x))
-        self.assertEqual(utils.integrate(2*x), (12 * x ** 2))
-        self.assertEqual(utils.integrate(4 * x ** 3),(42 * x ** 4)) 
+        self.assertEqual(utils.integrate('1') , 2)
+        self.assertEqual(utils.integrate('2 * x + 1'), 2)
+        self.assertEqual(utils.integrate('3 * x**3 + 3*x + 2'), 4)
         
 
 if __name__ == '__main__':
