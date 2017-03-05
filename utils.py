@@ -52,7 +52,7 @@ def integrate(function, lower, upper):
     for i in range(n):
         x = lower + (i + 0.5) * h
         z += eval(function) * h
-    return z
+    return round(z,3)
 
 
 if __name__ == '__main__':
